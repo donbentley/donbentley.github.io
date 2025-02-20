@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./output.css" rel="stylesheet" />
+
+		<title>Internship @ Grafstate</title>
+	</head>
+	<body class="bg-white text-gray-900 font-[Nunito]">
+		<!-- Header -->
+		<div
+			class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
+		></div>
+		<header
+			class="bg-white/0 pt-6 pb-6 backdrop-blur-md fixed w-full top-0 z-50"
+		>
+			<div
+				class="container mx-auto px-4 md:px-6 flex justify-between items-center"
+			>
+				<a href="index.html">
+					<img
+						src="./assets/DONLOGO.png"
+						ref="./index.html"
+						alt="don"
+						class="h-10 md:h-12 w-auto"
+					/>
+					<!-- Hamburger Menu for Mobile -->
+				</a>
+				<button
+					id="menu-toggle"
+					class="md:hidden text-gray-800 focus:outline-none"
+				>
+					<svg
+						class="w-6 h-6"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16m-7 6h7"
+						></path>
+					</svg>
+				</button>
+				<!-- Navigation Menu -->
+				<nav id="menu" class="hidden md:flex md:space-x-6">
+					<ul
+						class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0"
+					>
+						<li>
+							<a
+								href="#contact"
+								class="text-black font-bold hover:text-zinc-600"
+								>contact</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="mt-24 container mx-auto">
+			<section class="py-12">
+				<h1 class="text-4xl font-extrabold">
+					Internship @ <span class="text-red-600">Grafstate</span>
+				</h1>
+				<p class="mt-4 text-gray-600 text-lg font-bold max-w-2xl mx-auto">
+					<span class="italic font-light pb-4"
+						>A post class conversation turned into a once in a lifetime
+						opportunity...
+					</span>
+					<br />
+					<br />
+					<span class="text-2xl font-bold mt-10 text-gray-700">Background</span>
+					<br /><br />
+					Right before the summer of 2024 I briefly spoke with my professor
+					about creating a mobile implementation of his mathematical
+					visualization software.
+					<br /><br />
+					Grafstate, created by Dr. William Hollingsworth, is a brilliant
+					solution to his own unique problem. <br />
+					<br />
+					In his own words:
+					<br />
+					<br />
+					<span class="p-6 italic font-light"
+						>"Creating state diagrams for lecture slides proved to be difficult
+						and very time consuming for me.
+						<span class="underline"
+							>I do not see well and have difficulty with point-and-click
+							interfaces.
+						</span>
+						When creating slides for the first lecture on deterministic finite
+						automata, it took me so long to draw one state diagram that it was
+						clear that using presentation software would not be feasible."</span
+					>
+					<br />
+					<span
+						class="flex justify-end pr-10 text-red-600 font-extrabold"
+						border-1
+						>-Bill Hollingsworth</span
+					>
+
+					<br />
+					Today Grafstate is used in all sections of CSCI-2670 Theory of
+					Computation, a class that is required for all Computer Science majors
+					at the University of Georgia.
+					<br />
+					<br />
+					Bill enthusiastically agreed to sponsor my internship and explained
+					that Grafstate was just one project under his company "Cynsight."
+					Cynsight's main goal is to find solutions for individuals with visual
+					impairments and low vision.
+					<br />
+				</p>
+				<p class="pl-6 text-2xl font-bold mt-10">My Task</p>
+				<img src="./assets/grafstate UI.png" />
+
+				<p class="font-bold p-6">
+					Over the summer I collaborated closely with Dr. William Hollingsworth
+					with a goal at enhancing the overall usability of Grafstate in hopes
+					to get other schools using it. <br />
+					<br />
+					Our workflow consisted of many zoom calls, emails, and mock iterations
+					of features to try to get closer to our goal. Still I successfully
+					implemented three key feature upgrades, including
+				</p>
+			</section>
+
+			<section class="grid md:grid-cols-2 gap-12 py-12">
+				<div>
+					<h2 class="text-2xl font-bold">Process</h2>
+					<p class="font-bold">
+						Our workflow consisted of many zoom calls, emails, and mock
+						iterations of features to try to get closer to our goal. Still I
+						successfully implemented three key feature upgrades, including
+						<br />
+					</p>
+					<ol class="p-6 gap-4 py-4">
+						<li>
+							1. The ability for users to directly download photos of rendered
+							computational structures.
+							<br />
+						</li>
+						<li>
+							2. Integrating Vim and Emacs keybindings into the platform's
+							existing CodeMirror, thus, allowing students and faculty,
+							particularly those with visual impairments, to efficiently write
+							and manipulate complex mathematical expressions within a virtual
+							environment.
+							<br />
+						</li>
+						<li>
+							3. A full cost analysis of a certain AWS related feature vs
+							Google's GCP counterpart.
+							<br />
+						</li>
+					</ol>
+				</div>
+				<img src="./assets/vimsandbox.jpg" class="rounded-md shadow-lg" />
+			</section>
+		</main>
+
+		<section id="closing" class="bg-gray-50 mt-10 pt-10 px-6 md:px-24 lg:px-32">
+			<h2 class="text-2xl md:text-3xl text-center font-bold">
+				Problems, thought process, and what I learned.
+			</h2>
+			<p
+				class="mt-4 text-sm md:text-base font-semibold text-center text-gray-500 pb-10"
+			>
+				Like most projects, I ran into more than a few bumps along the way. I
+				was way out of my depth working on code that has largely been developed
+				and maintained by one single person over the past 10 years.
+				<br /><br />
+				Though difficult, this "language barrier" casued me to be more
+				thoughtful about the questions I was asking. Before I reached out for
+				help, I gained confidence in myself to find an answer even if it wasn't
+				the right one.
+				<br /><br />
+				Through this project, I learned a lot about maintaining a live
+				application, and the attention to detail it takes to run a "one man
+				operation" at scale. Additionally I was able to look at accessibility
+				technology from a lens I had never experienced before.
+			</p>
+			<p class="text-center italic font-light">
+				Unfortunately I cannot share any code as I have signed a NDA.
+			</p>
+		</section>
+		<section id="linkto" class="bg-gray-100 py-10 px-6">
+			<h2 class="text-3xl text-orange-400 font-extrabold mb-6">
+				Other Projects
+			</h2>
+			<div
+				class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 justify-items-center"
+			>
+				<!-- Project 1 -->
+				<div
+					class="flex flex-col rounded-xl bg-white shadow-md max-w-sm w-full"
+				>
+					<img
+						src="./assets/botify.png"
+						class="w-full aspect-video object-cover rounded-t-xl"
+						alt="Project Image"
+					/>
+					<div class="p-6">
+						<h5 class="text-2xl font-extrabold text-black">Botify</h5>
+						<p class="text-zinc-500 text-sm mt-2">
+							Music recommendation app developed using Spotify's web tools.
+						</p>
+					</div>
+					<div class="p-6 pt-0">
+						<button
+							class="text-xs font-bold uppercase text-zinc-600 hover:scale-105 hover:text-zinc-800 transition-transform duration-200"
+						>
+							VIEW PROJECT →
+						</button>
+					</div>
+				</div>
+
+				<!-- Project 2 -->
+				<div
+					class="flex flex-col rounded-xl bg-white shadow-md max-w-sm w-full"
+				>
+					<img
+						src="./assets/smallsat.png"
+						class="w-full aspect-video object-cover rounded-t-xl"
+						alt="LEARNSat"
+					/>
+					<div class="p-6">
+						<h5 class="text-2xl font-extrabold text-black">LEARNSat</h5>
+						<p class="text-zinc-500 text-sm mt-2">
+							Initiative providing high school students the opportunity to build
+							small satellites.
+						</p>
+					</div>
+					<div class="p-6 pt-0">
+						<a
+							href="https://learnsat.uga.edu"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-xs font-bold uppercase text-zinc-600 hover:scale-105 hover:text-zinc-800 transition-transform duration-200"
+						>
+							LEARN MORE →
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 3 -->
+				<div
+					class="flex flex-col rounded-xl bg-white shadow-md max-w-sm w-full"
+				>
+					<img
+						src="./assets/betterbook.png"
+						class="w-full aspect-video object-cover rounded-t-xl"
+						alt="Internship @ Grafstate"
+					/>
+					<div class="p-6">
+						<h5 class="text-2xl font-extrabold text-black">BetterBook</h5>
+						<p class="text-zinc-500 text-sm mt-2">
+							A full stack app aimed at providing a platform for single-theatre
+							operations to manage online ticketing, promotions, and showtimes.
+						</p>
+					</div>
+					<div class="p-6 pt-0">
+						<a
+							href="./betterbook.html"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="select-none text-center align-middle font-sans text-xs font-bold uppercase text-zinc-600 hover:cursor-pointer hover:scale-105 hover:text-zinc-800 transition-transform duration-200"
+						>
+							VIEW PROJECT →
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-black text-white py-6">
+			<div
+				class="container mx-auto px-4 md:px-6 flex justify-between items-center"
+			>
+				<a href="index.html">
+					<img
+						src="assets/DONLOGO.png"
+						alt="don"
+						class="invert h-10 md:h-12 w-auto"
+					/>
+				</a>
+				<div class="flex space-x-4">
+					<a
+						href="https://github.com/donbentley"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="hover:opacity-75 text-xs fill-white transition-opacity"
+					>
+						github
+					</a>
+
+					<a
+						href="https://www.linkedin.com/in/don-bentley/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="hover:opacity-75 text-xs fill-white transition-opacity"
+					>
+						linkedin
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

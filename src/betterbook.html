@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./output.css" rel="stylesheet" />
+		<title>BetterBook - Project</title>
+	</head>
+	<body class="bg-white text-gray-900 font-[Nunito]">
+		<!-- Header -->
+		<div
+			class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]"
+		></div>
+		<header
+			class="bg-white/0 pt-6 pb-6 backdrop-blur-md fixed w-full top-0 z-50"
+		>
+			<div
+				class="container mx-auto px-4 md:px-6 flex justify-between items-center"
+			>
+				<a href="index.html">
+					<img
+						src="./assets/DONLOGO.png"
+						ref="./index.html"
+						alt="don"
+						class="h-10 md:h-12 w-auto"
+					/>
+					<!-- Hamburger Menu for Mobile -->
+				</a>
+				<button
+					id="menu-toggle"
+					class="md:hidden text-gray-800 focus:outline-none"
+				>
+					<svg
+						class="w-6 h-6"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16m-7 6h7"
+						></path>
+					</svg>
+				</button>
+				<!-- Navigation Menu -->
+				<nav id="menu" class="hidden md:flex md:space-x-6">
+					<ul
+						class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0"
+					>
+						<li>
+							<a
+								href="#contact"
+								class="text-black font-bold hover:text-zinc-600"
+								>contact</a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main class="mt-24 container mx-auto px-6">
+			<section class="py-12">
+				<h1 class="text-4xl font-extrabold">BetterBook</h1>
+				<p class="mt-4 text-gray-600 text-sm font-bold max-w-2xl mx-auto">
+					BetterBook is a full-stack application aimed at providing a platform
+					for single-theatre operations to manage online ticketing, promotions,
+					and showtimes. This application was built alongside a partner using
+					Spring Boot, MySQL, and React to effectively store and retrieve data.
+				</p>
+			</section>
+
+			<section class="grid md:grid-cols-2 gap-12 py-12">
+				<div>
+					<h2 class="text-2xl font-bold">Stack</h2>
+					<div class="flex flex-col-3 justify-between text-xs">
+						<ul class="mt-4 text-gray-600">
+							<li class="font-bold">type</li>
+							<li>group project</li>
+						</ul>
+						<ul class="mt-4 text-gray-600">
+							<li class="font-bold">database</li>
+							<li>MySQL</li>
+						</ul>
+						<ul class="mt-4 text-gray-600">
+							<li class="font-bold">backend</li>
+							<li>Java</li>
+							<li>Spring Boot</li>
+							<li>Maven</li>
+							<li>Spring Security JPA</li>
+						</ul>
+						<ul class="mt-4 text-gray-600">
+							<li class="font-bold">frontend</li>
+							<li>React</li>
+							<li>TailwindCSS</li>
+							<li>JavaScript</li>
+						</ul>
+					</div>
+				</div>
+				<img src="./assets/betterbookpp.png" class="rounded-md shadow-lg" />
+			</section>
+
+			<section id="dev-walkthrough">
+				<div class="grid gap-12">
+					<!-- Left side (Phase 2 content) -->
+					<div>
+						<h2 class="text-2xl font-bold">Process</h2>
+						<p class="mt-4 text-sm text-gray-600">
+							This project was developed using an Agile approach. Our
+							development included 3 sprints where we iteratively improved each
+							area of our application.
+						</p>
+
+						<p class="text-sm font-extrabold mt-2">PHASE 1 - PLANNING</p>
+						<p class="mt-4 text-sm text-gray-600 pl-4">
+							First, we had to establish user stories to ensure we met the needs
+							of all customers and vendors. Then, we built a backend API using
+							the Spring Boot Web JPA to connect our frontend to our database.
+							We also defined API endpoints, database schema, and authentication
+							mechanisms.
+						</p>
+						<div class="flex flex-row rounded-md gap-3">
+							<img
+								src="./assets/betterbookarchitecture.png"
+								alt="Project architecture diagram"
+							/>
+						</div>
+
+						<p class="text-sm font-extrabold mt-2">PHASE 2 - DEVELOPMENT</p>
+						<p class="mt-4 text-sm text-gray-600 pl-4">
+							During this phase, we implemented the core features and integrated
+							the frontend, backend, and database.
+						</p>
+						<ul class="mt-4 text-xs text-gray-600 pl-4 mb-6 list-disc">
+							<li>
+								Built an admin panel to manage content, like a mini home-built
+								CMS (Content Management System).
+							</li>
+							<li>
+								Implemented RESTful APIs for user log-in, sign-up, password
+								encryption, and password reset.
+							</li>
+							<li>
+								Added email verification, promotions, and payment processing.
+							</li>
+							<li>
+								Designed the MySQL database schema to store movie data, user
+								information, bookings, and promotions.
+							</li>
+						</ul>
+						<div
+							class="grid grid-cols-2 justify-between align-center gap-6 my-10 p-10"
+						>
+							<img
+								src="./assets/admindash.png"
+								class="w-auto rounded-md shadow-md object-contain"
+								alt="Admin Dashboard"
+							/>
+							<img
+								src="./assets/editprofile.png"
+								class="w-auto rounded-md object-cover"
+								alt="Profile editing UI"
+							/>
+							<img
+								src="./assets/paymentcards.png"
+								class="w-auto rounded-md object-cover"
+								alt="Payment methods UI"
+							/>
+							<img
+								src="./assets/betterbookseats.png"
+								class="w-auto rounded-md shadow-md object-cover"
+								alt="Seat selection UI"
+							/>
+						</div>
+						<p class="text-sm font-extrabold mt-2">PHASE 3 - OPTIMIZATION</p>
+						<p class="mt-4 text-sm text-gray-600 pl-4">
+							Before launching, we performed thorough testing and optimizations
+							to ensure a smooth user experience. These improvements were made
+							while keeping our initial user stories in mind. We constructed a
+							plan to deploy BetterBook using Netlify.
+						</p>
+
+						<p class="text-sm font-light italic mt-2 pl-6">
+							WHICH LEADS US TO OUR NEXT SECTION...
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<section id="closing" class="bg-gray-50 mt-10 pt-10 px-6 md:px-24 lg:px-32">
+			<h2 class="text-2xl md:text-3xl text-center font-bold">
+				Problems, thought process, and what I learned.
+			</h2>
+			<p
+				class="mt-4 text-sm md:text-base font-semibold text-center text-gray-500 pb-10"
+			>
+				Like most projects, I ran into a few bumps along the way. A few
+				difficult areas were maintaining project structure, dependency
+				management, and API security.
+				<br /><br />
+				Due to the project's sheer size and multiple hands working on it, it was
+				essential to construct reusable components and hooks so we could iterate
+				quickly and clearly. If I had to change anything, I would have opted for
+				a simplified database using something like Flask, MongoDB, or Laravel
+				paired with Clerk to handle authentication and security, and data in one
+				fell swoop.
+				<br /><br />
+				Through this project, I learned a lot about what goes into planning,
+				building an application that fulfills the needs of users, admins, and
+				clients. I think this knowledge will be applicable in working through
+				real-world case studies with clients.
+			</p>
+			<a href="https://github.com/donbentley/cinema-e-booking-system">
+				<div class="flex justify-center items-center gap-12 h-full pb-10">
+					<div
+						class="bg-gradient-to-b from-stone-300/40 to-transparent p-[4px] rounded-[16px]"
+					>
+						<button
+							class="group p-[4px] rounded-[12px] bg-gradient-to-b from-white to-stone-200/40 shadow-[0_1px_3px_rgba(0,0,0,0.5)] active:shadow-[0_0px_1px_rgba(0,0,0,0.5)] active:scale-[0.995]"
+						>
+							<div
+								class="bg-gradient-to-b from-stone-200/40 to-white/80 rounded-[8px] px-2 py-2"
+							>
+								<div class="flex gap-2 items-center">
+									<span class="font-semibold">check out the project</span>
+								</div>
+							</div>
+						</button>
+					</div>
+				</div>
+			</a>
+		</section>
+		<section id="linkto" class="bg-gray-100 py-10 px-6">
+			<h2 class="text-3xl text-orange-400 font-extrabold mb-6">
+				Other Projects
+			</h2>
+			<div
+				class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-8 justify-items-center"
+			>
+				<!-- Project 1 -->
+				<div
+					class="flex flex-col rounded-xl bg-white shadow-md max-w-sm w-full"
+				>
+					<img
+						src="./assets/botify.png"
+						class="w-full aspect-video object-cover rounded-t-xl"
+						alt="Project Image"
+					/>
+					<div class="p-6">
+						<h5 class="text-2xl font-extrabold text-black">Botify</h5>
+						<p class="text-zinc-500 text-sm mt-2">
+							Music recommendation app developed using Spotify's web tools.
+						</p>
+					</div>
+					<div class="p-6 pt-0">
+						<button
+							class="text-xs font-bold uppercase text-zinc-600 hover:scale-105 hover:text-zinc-800 transition-transform duration-200"
+						>
+							VIEW PROJECT →
+						</button>
+					</div>
+				</div>
+
+				<!-- Project 2 -->
+				<div
+					class="flex flex-col rounded-xl bg-white shadow-md max-w-sm w-full"
+				>
+					<img
+						src="./assets/smallsat.png"
+						class="w-full aspect-video object-cover rounded-t-xl"
+						alt="LEARNSat"
+					/>
+					<div class="p-6">
+						<h5 class="text-2xl font-extrabold text-black">LEARNSat</h5>
+						<p class="text-zinc-500 text-sm mt-2">
+							Initiative providing high school students the opportunity to build
+							small satellites.
+						</p>
+					</div>
+					<div class="p-6 pt-0">
+						<a
+							href="https://learnsat.uga.edu"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="text-xs font-bold uppercase text-zinc-600 hover:scale-105 hover:text-zinc-800 transition-transform duration-200"
+						>
+							LEARN MORE →
+						</a>
+					</div>
+				</div>
+
+				<!-- Project 3 -->
+				<div
+					class="flex flex-col rounded-xl bg-white shadow-md max-w-sm w-full"
+				>
+					<img
+						src="./assets/grafstate.png"
+						class="w-full aspect-video object-cover rounded-t-xl"
+						alt="Internship @ Grafstate"
+					/>
+					<div class="p-6">
+						<h5 class="text-2xl font-extrabold text-black">
+							Internship @ Grafstate
+						</h5>
+						<p class="text-zinc-500 text-sm mt-2">
+							Collaborated with UGA Faculty on startup math visualization
+							software.
+						</p>
+					</div>
+					<div class="p-6 pt-0">
+						<button
+							class="text-xs font-bold uppercase text-zinc-600 hover:scale-105 hover:text-zinc-800 transition-transform duration-200"
+						>
+							READ STORY →
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-black text-white py-6">
+			<div
+				class="container mx-auto px-4 md:px-6 flex justify-between items-center"
+			>
+				<a href="index.html">
+					<img
+						src="assets/DONLOGO.png"
+						alt="don"
+						class="invert h-10 md:h-12 w-auto"
+					/>
+				</a>
+				<div class="flex space-x-4">
+					<a
+						href="https://github.com/donbentley"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="hover:opacity-75 text-xs fill-white transition-opacity"
+					>
+						github
+					</a>
+
+					<a
+						href="https://www.linkedin.com/in/don-bentley/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="hover:opacity-75 text-xs fill-white transition-opacity"
+					>
+						linkedin
+					</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
